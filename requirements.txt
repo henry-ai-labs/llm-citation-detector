@@ -1,0 +1,21 @@
+# LLM Citation Detector v1 - runtime dependencies
+#
+# v1 (MVP) intentionally keeps the dependency graph tiny so the tool runs on
+# any vanilla Python 3.9+ install. Heavier deps (LLM SDKs, NER models) are
+# left to v2 once a paid budget is approved.
+
+# HTTP client used by the optional search-engine providers in main.py
+# (Perplexity public pages, Bing, DuckDuckGo HTML, etc.)
+requests>=2.31.0
+
+# robots.txt parser - keeps the crawler polite and ToS-compliant
+# (already in stdlib via urllib.robotparser, listed here for visibility)
+# urllib3 is pulled in transitively by requests
+
+# --- Optional / future ---------------------------------------------------
+# Uncomment ONE of the following when an API budget is approved. Each block
+# corresponds to a TODO[paid] marker inside main.py::fetch_ai_answer.
+#
+# google-generativeai>=0.7.0      # Gemini
+# openai>=1.30.0                  # OpenAI / SearchGPT
+# anthropic>=0.30.0               # Claude
