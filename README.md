@@ -20,6 +20,16 @@ This repo ships a **minimum-viable** GEO monitor that any small team can run on 
 
 Five product categories ship out of the box (outdoor backpacks, yoga mats, electric toothbrushes, noise-cancelling headphones, coffee machines) with 50 bilingual long-tail queries.
 
+### 📊 Live baseline (captured 2026-06-23)
+
+A first real-search baseline is already in the repo — no need to take our word for it:
+
+- **[`reports/20260623_baseline_real_search.md`](./reports/20260623_baseline_real_search.md)** — 5 categories × 1 English long-tail query each, **44 brand mentions** recognised across the dictionary, captured live via a general search-engine proxy.
+- **[`reports/_baseline_real_search_stats.json`](./reports/_baseline_real_search_stats.json)** — the raw `per_query` + `stats` payload for downstream analysis.
+- **[`baseline_real_search.py`](./baseline_real_search.py)** — the reproducible 200-line script that produced both files.
+
+Use it as a smoke test for your own fork, or as a reference for how the report writer in `main.py` is wired.
+
 ## 2. Why dictionary-based extraction?
 
 We deliberately picked dictionary matching over a trained NER model:
@@ -54,12 +64,16 @@ Output:
 ```
 .
 ├── main.py                 # 5-module pipeline (load / fetch / extract / aggregate / report)
+├── baseline_real_search.py # 200-line fallback runner — feeds search-engine-proxy JSON through main.py
 ├── seed_real_samples.py    # auxiliary: feeds hand-captured real snippets through the pipeline
 ├── queries.json            # 5 categories × 10 long-tail queries (bilingual)
 ├── requirements.txt        # one runtime dep: requests
 ├── LICENSE                 # MIT
 ├── README.md               # this file
 └── reports/                # generated reports + raw JSON
+    ├── 20260623_baseline_real_search.md   # live baseline (44 brand mentions, 5 categories × 1 query)
+    ├── _baseline_real_search_stats.json   # raw per_query + stats payload
+    └── 20260623_周报.md                    # Chinese weekly recap (1860 chars)
 ```
 
 The 5 modules inside `main.py` are clearly delimited by banner comments:
@@ -90,9 +104,19 @@ Open `main.py`, find the `TODO[paid]` markers inside the *Module 2* docstring, a
 - v1 never scrapes beyond the first results page.
 - We do not capture, store or redistribute upstream copyrighted text — only the brand-token counts derived from it.
 
+## 6b. Network resilience (China-mainland note)
+
+The default `--provider duckduckgo` resolves `duckduckgo.com:443`, which is **not reachable from mainland China** networks without a proxy. If you hit `Network is unreachable`, you have two zero-cost options:
+
+1. **Use a general search-engine proxy.** That is exactly what `baseline_real_search.py` demonstrates — it feeds search-API JSON straight through the same `extract_brands → aggregate_stats → generate_report` pipeline in `main.py`. Same brand dictionary, same report format, different upstream.
+2. **Switch to a paid LLM provider.** The `TODO[paid]` markers inside `main.py` Module 2 are pre-wired for Gemini / OpenAI / Anthropic; once a key is set, your laptop's network restrictions stop mattering.
+
+The repo treats provider portability as a first-class concern: any new fetcher just has to return `(answer_text, source_url)` tuples and the rest of the pipeline is reused unchanged.
+
 ## 7. Roadmap
 
-- **v1.0 (this release)** — 5 categories, demo + DuckDuckGo providers, Markdown report.
+- **v1.0 (this release)** — 5 categories, demo + DuckDuckGo providers, Markdown report. ✅
+- **v1.0.1** — Added `baseline_real_search.py` (search-engine-proxy fallback) and a published real-search baseline report for users on restricted networks. ✅
 - **v1.1** — Gemini provider plug-in (free-tier friendly), full 50-query weekly cron.
 - **v1.2** — Brand dictionary expansion to 30+ per category; entry/exit deltas week-over-week.
 - **v1.3** — "Citation gap vs. competitor" view for a user-supplied SKU.
