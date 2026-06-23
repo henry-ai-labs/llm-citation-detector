@@ -1,0 +1,390 @@
+{
+  "_meta": {
+    "captured_at": "2026-06-23",
+    "provider": "search_web (general)",
+    "samples": 5,
+    "note": "Educational and personal research use only. Each sample is one real long-tail query whose answer text is condensed from publicly indexed review articles."
+  },
+  "per_query": [
+    {
+      "category": "outdoor_backpack",
+      "query": "2026 best women hiking backpack recommendations",
+      "brand_hits": [
+        "Osprey",
+        "Gregory",
+        "Deuter",
+        "REI Co-op",
+        "Granite Gear",
+        "The North Face",
+        "Patagonia",
+        "Mountain Hardwear",
+        "NEMO Equipment",
+        "Gossamer Gear"
+      ],
+      "source_text_len": 824
+    },
+    {
+      "category": "yoga_mat",
+      "query": "best non slip yoga mat 2026 brand Manduka Lululemon review",
+      "brand_hits": [
+        "Manduka",
+        "Lululemon",
+        "Liforme",
+        "Jade Yoga",
+        "Gaiam",
+        "Alo Yoga",
+        "Hugger Mugger",
+        "Prana",
+        "Yoloha",
+        "Iuga",
+        "BalanceFrom",
+        "Keep",
+        "Decathlon",
+        "佑美"
+      ],
+      "source_text_len": 780
+    },
+    {
+      "category": "electric_toothbrush",
+      "query": "best electric toothbrush 2026 Philips Oral-B Sonicare review",
+      "brand_hits": [
+        "Philips Sonicare",
+        "Oral-B",
+        "usmile",
+        "Laifen",
+        "Quip",
+        "Xiaomi",
+        "Soocas",
+        "Colgate Hum",
+        "Bitvae",
+        "Aquasonic",
+        "舒客"
+      ],
+      "source_text_len": 739
+    },
+    {
+      "category": "noise_cancelling_headphones",
+      "query": "best noise cancelling headphones 2026 Sony Bose Apple review",
+      "brand_hits": [
+        "Sony",
+        "Bose",
+        "Apple",
+        "Sennheiser",
+        "Anker Soundcore",
+        "Shokz",
+        "Jabra",
+        "Edifier"
+      ],
+      "source_text_len": 766
+    },
+    {
+      "category": "coffee_machine",
+      "query": "best espresso machine 2026 home use brand",
+      "brand_hits": [
+        "Breville",
+        "De'Longhi",
+        "Nespresso",
+        "Gaggia",
+        "Rancilio",
+        "Fellow"
+      ],
+      "source_text_len": 948
+    }
+  ],
+  "stats": {
+    "outdoor_backpack": {
+      "total_queries": 1,
+      "answered_queries": 1,
+      "top_brands": [
+        {
+          "rank": 1,
+          "brand": "Osprey",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 2,
+          "brand": "Gregory",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 3,
+          "brand": "Deuter",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 4,
+          "brand": "REI Co-op",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 5,
+          "brand": "Granite Gear",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 6,
+          "brand": "The North Face",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 7,
+          "brand": "Patagonia",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 8,
+          "brand": "Mountain Hardwear",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 9,
+          "brand": "NEMO Equipment",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 10,
+          "brand": "Gossamer Gear",
+          "count": 1,
+          "mention_rate": 100.0
+        }
+      ]
+    },
+    "yoga_mat": {
+      "total_queries": 1,
+      "answered_queries": 1,
+      "top_brands": [
+        {
+          "rank": 1,
+          "brand": "Manduka",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 2,
+          "brand": "Lululemon",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 3,
+          "brand": "Liforme",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 4,
+          "brand": "Jade Yoga",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 5,
+          "brand": "Gaiam",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 6,
+          "brand": "Alo Yoga",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 7,
+          "brand": "Hugger Mugger",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 8,
+          "brand": "Prana",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 9,
+          "brand": "Yoloha",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 10,
+          "brand": "Iuga",
+          "count": 1,
+          "mention_rate": 100.0
+        }
+      ]
+    },
+    "electric_toothbrush": {
+      "total_queries": 1,
+      "answered_queries": 1,
+      "top_brands": [
+        {
+          "rank": 1,
+          "brand": "Philips Sonicare",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 2,
+          "brand": "Oral-B",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 3,
+          "brand": "usmile",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 4,
+          "brand": "Laifen",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 5,
+          "brand": "Quip",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 6,
+          "brand": "Xiaomi",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 7,
+          "brand": "Soocas",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 8,
+          "brand": "Colgate Hum",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 9,
+          "brand": "Bitvae",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 10,
+          "brand": "Aquasonic",
+          "count": 1,
+          "mention_rate": 100.0
+        }
+      ]
+    },
+    "noise_cancelling_headphones": {
+      "total_queries": 1,
+      "answered_queries": 1,
+      "top_brands": [
+        {
+          "rank": 1,
+          "brand": "Sony",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 2,
+          "brand": "Bose",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 3,
+          "brand": "Apple",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 4,
+          "brand": "Sennheiser",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 5,
+          "brand": "Anker Soundcore",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 6,
+          "brand": "Shokz",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 7,
+          "brand": "Jabra",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 8,
+          "brand": "Edifier",
+          "count": 1,
+          "mention_rate": 100.0
+        }
+      ]
+    },
+    "coffee_machine": {
+      "total_queries": 1,
+      "answered_queries": 1,
+      "top_brands": [
+        {
+          "rank": 1,
+          "brand": "Breville",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 2,
+          "brand": "De'Longhi",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 3,
+          "brand": "Nespresso",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 4,
+          "brand": "Gaggia",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 5,
+          "brand": "Rancilio",
+          "count": 1,
+          "mention_rate": 100.0
+        },
+        {
+          "rank": 6,
+          "brand": "Fellow",
+          "count": 1,
+          "mention_rate": 100.0
+        }
+      ]
+    }
+  }
+}
